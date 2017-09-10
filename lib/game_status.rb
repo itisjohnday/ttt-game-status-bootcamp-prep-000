@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |combination|
-    #print combination
+
     if draw?(board)
       return false
     end
@@ -46,10 +46,10 @@ def won?(board)
 end
 
 def full?(board)
-  if board.any? {|i| i == " "}
-    false
-  else
+  if board.any? {|i| i == "X" || i == "O"}
     true
+  else
+    false
   end
 end
 
