@@ -27,6 +27,12 @@ def won?(board)
           return combination
         end
       end
+      if board[index] == 'O'
+        o_count += 1
+        if o_count == 3
+          return combination
+        end
+      end
     end
   end
 end
