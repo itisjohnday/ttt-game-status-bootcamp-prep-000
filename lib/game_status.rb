@@ -45,8 +45,12 @@ def won?(board)
   end
 end
 
-def draw?(board)
-  
+def full?(board)
+  if board.any? {|i| i == " "}
+    return false
+  else 
+    return true
+  end
 end
 #print won?(["X","X","X"," "," "," "," "," "," "])
 winning_row = won?(["X"," "," "," "," "," ","X"," "," "])
