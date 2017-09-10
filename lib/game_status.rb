@@ -66,6 +66,6 @@ end
 def winner(board)
   winning_element = won?(board)
   if winning_element
-    return winning_element[0]
+    puts winning_element[0]
   end
 end
