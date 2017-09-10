@@ -47,14 +47,14 @@ end
 
 def full?(board)
   if board.any? {|i| i == " "}
-    return false
+    false
   else
-    return true
+    true
   end
 end
 
 def draw?(board)
-  if full?(board) && !(won?(board))
+  if full?(board)
     return true
   else
     return false
