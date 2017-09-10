@@ -17,15 +17,6 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |combination|
-
-    if draw?(board)
-      return false
-    end
-
-    if board.all? {|i| i == " "}
-      return false
-    end
-
     x_count = 0
     o_count = 0
     combination.each do |index|
