@@ -20,16 +20,18 @@ def won?(board)
     x_count = 0
     o_count = 0
     combination.each do |index|
-      if board[index] == 'X'
-        x_count += 1
-        if x_count == 3
-          return combination
+      if position_taken?(board, index)
+        if board[index] == 'X'
+          x_count += 1
+          if x_count == 3
+            return combination
+          end
         end
-      end
-      if board[index] == 'O'
-        o_count += 1
-        if o_count == 3
-          return combination
+        if board[index] == 'O'
+          o_count += 1
+          if o_count == 3
+            return combination
+          end
         end
       end
     end
