@@ -18,11 +18,11 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |combination|
     #print combination
-    if draw?(board) = true
+    if draw?(board) == true
       return false
     end
 
-    if board.all? {|i| i = " "}
+    if board.all? {|i| i == " "}
       return false
     end
 
