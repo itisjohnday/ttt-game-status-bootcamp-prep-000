@@ -45,6 +45,9 @@ def won?(board)
   end
 end
 
+def draw?(board)
+  
+end
 #print won?(["X","X","X"," "," "," "," "," "," "])
 winning_row = won?(["X"," "," "," "," "," ","X"," "," "])
 print winning_row
