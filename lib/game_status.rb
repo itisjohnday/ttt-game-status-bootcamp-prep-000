@@ -22,8 +22,8 @@ def won?(board)
     o_count = 0
     combination.each do |index|
       if board[index] == 'X'
-        count += 1
-        if count == 3
+        x_count += 1
+        if x_count == 3
           return combination
         end
       end
