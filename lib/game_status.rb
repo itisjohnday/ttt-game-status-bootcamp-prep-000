@@ -35,7 +35,6 @@ def won?(board)
         end
       end
     end
-    break
   end
 end
 
