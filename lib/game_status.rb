@@ -31,4 +31,5 @@ def won?(board)
 end
 
 #print won?(["X","X","X"," "," "," "," "," "," "])
-puts won?([" "," "," ","X","X","X"," "," "," "])
+winning_row = won?([" "," "," ","X","X","X"," "," "," "])
+puts winning_row
