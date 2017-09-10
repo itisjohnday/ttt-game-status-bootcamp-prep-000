@@ -14,3 +14,17 @@ WIN_COMBINATIONS = [
   [0,4,8], # 1st Diagonal
   [2,4,6]  # 2nd Diagonal
 ]
+
+def won?(board)
+  WIN_COMBINATIONS.each do |combination|
+    count = 0
+    combination.each do |index|
+      if board[index] == 'X'
+        count += 1
+        if count == 3
+          return combination
+        end
+      end
+    end
+  end
+end
