@@ -52,6 +52,7 @@ def full?(board)
     return true
   end
 end
-#print won?(["X","X","X"," "," "," "," "," "," "])
-winning_row = won?(["X"," "," "," "," "," ","X"," "," "])
-print winning_row
+
+def draw?(board)
+  
+end
