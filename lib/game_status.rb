@@ -68,3 +68,8 @@ def over?(board)
     false
   end
 end
+
+def winner(board)
+  winning_element = won?(board)
+  return winning_element[0]
+end
