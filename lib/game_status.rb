@@ -32,4 +32,4 @@ end
 
 #print won?(["X","X","X"," "," "," "," "," "," "])
 winning_row = won?([" "," "," ","X","X","X"," "," "," "])
-puts winning_row
+print winning_row
