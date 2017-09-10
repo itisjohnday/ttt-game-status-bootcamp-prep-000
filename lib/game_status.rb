@@ -18,7 +18,8 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |combination|
     #print combination
-    count = 0
+    x_count = 0
+    o_count = 0
     combination.each do |index|
       if board[index] == 'X'
         count += 1
@@ -31,5 +32,5 @@ def won?(board)
 end
 
 #print won?(["X","X","X"," "," "," "," "," "," "])
-winning_row = won?(["X"," "," "," "," "," ","X"," "," "])
+winning_row = won?(["X"," "," ","X"," "," ","X"," "," "])
 print winning_row
