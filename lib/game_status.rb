@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |combination|
-    print combination
+    #print combination
     count = 0
     combination.each do |index|
       if board[index] == 'X'
